@@ -25,16 +25,15 @@ public class Main {
             triangle = new Triangle(width, height);
         }
         else if (answer == 2) {
-            float[] sides = new float[2];
+            float[] sides = new float[3];
 
-            System.out.print("Triangelns sidor: ");
+            System.out.println("Triangelns sidor: ");
             for (int i = 0; i < 3; i++) {
-                System.out.print("Sida " + i + ": ");
+                System.out.print("Sida " + (i+1) + ": ");
                 sides[i] = input.nextFloat();
             }
             triangle = new Triangle(sides);
         }
-
 
     }
 }
