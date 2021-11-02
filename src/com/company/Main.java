@@ -32,7 +32,6 @@ public class Main {
                 System.out.print("Sida " + i + ": ");
                 sides[i] = input.nextFloat();
             }
-            float height = input.nextFloat();
             triangle = new Triangle(sides);
         }
 
