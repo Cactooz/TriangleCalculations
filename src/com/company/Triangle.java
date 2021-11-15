@@ -24,7 +24,12 @@ public class Triangle {
 	
 	//Main method to calculate the different things for the triangles
 	public void Calculate() {
-		if (width == 0.0f || height == 0.0f) {
+		if (angle != 0.0f) {
+			if (angle == 90) {
+				side3 = getThirdSide(side1, side2);
+			}
+		}
+		else if (width == 0.0f || height == 0.0f) {
 			splitArray();
 			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
 			System.out.println("Area: " + AreaWithSides(side1, side2, side3));
@@ -76,5 +81,12 @@ public class Triangle {
 		double circleRadius = Math.sqrt(((sp-s1)*(sp-s2)*(sp-s3))/sp);
 		
 		return (float) circleRadius;
+	}
+	
+	//Get the third side of the triangle using pythagoras formula
+	private float getThirdSide(float s1, float s2) {
+		double s3 = Math.sqrt((s1*s1)+(s2*s2));
+		
+		return (float) s3;
 	}
 }
