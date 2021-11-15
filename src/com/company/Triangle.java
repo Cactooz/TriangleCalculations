@@ -57,4 +57,9 @@ public class Triangle {
 		
 		return (float) median/2;
 	}
+	
+	private float Semiperimeter(float s1, float s2, float s3) {
+		return Circumference(s1, s2, s3) / 2;
+	}
+	
 }
