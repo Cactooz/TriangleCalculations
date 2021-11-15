@@ -20,7 +20,7 @@ public class Triangle {
 		if (width == 0.0f || height == 0.0f) {
 			splitArray();
 			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
-			System.out.println("Area: " + AreaWithSides());
+			System.out.println("Area: " + AreaWithSides(side1, side2, side3));
 			System.out.println("Median 1: " + Median(side1, side2, side3));
 			System.out.println("Median 2: " + Median(side2, side1, side3));
 			System.out.println("Median 3: " + Median(side3, side2, side1));
@@ -44,10 +44,10 @@ public class Triangle {
 	}
 	
 	//Get the area of a triangle that we only know the 3 sides of
-	private float AreaWithSides() {
-		float sp = (sides[0]+sides[1]+sides[2])/2;
+	private float AreaWithSides(float s1, float s2, float s3) {
+		float sp = Semiperimeter(s1, s2, s3);
 		
-		double area = Math.sqrt(sp*(sp-sides[0])*(sp-sides[1])*(sp-sides[2]));
+		double area = Math.sqrt(sp*(sp-s1)*(sp-s2)*(sp-s3));
 		
 		return (float) area;
 	}
