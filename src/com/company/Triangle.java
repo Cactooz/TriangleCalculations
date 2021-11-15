@@ -27,7 +27,7 @@ public class Triangle {
 		}
 	}
 	
-	//Split the array with the 3 sides into variables that can be used in the other methodes
+	//Split the array with the 3 sides into variables that can be used in the other methods
 	private void splitArray() {
 		side1 = sides[0];
 		side2 = sides[1];
