@@ -14,8 +14,12 @@ public class Triangle {
 	
 	public void Calculate() {
 		if (width == 0.0f || height == 0.0f) {
+			splitArray();
 			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
 			System.out.println("Area: " + AreaWithSides());
+		}
+		else {
+			System.out.println("Area: " + (width*height)/2);
 		}
 	}
 	

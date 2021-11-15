@@ -23,6 +23,8 @@ public class Main {
 			float width = input.nextFloat();
 			
 			triangle = new Triangle(width, height);
+			
+			triangle.Calculate();
 		}
 		else if (answer == 2) {
 			float[] sides = new float[3];
@@ -33,6 +35,8 @@ public class Main {
 				sides[i] = input.nextFloat();
 			}
 			triangle = new Triangle(sides);
+			
+			triangle.Calculate();
 		}
 		
 	}
