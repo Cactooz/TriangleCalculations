@@ -21,6 +21,9 @@ public class Triangle {
 			splitArray();
 			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
 			System.out.println("Area: " + AreaWithSides());
+			System.out.println("Median 1: " + Median(side1, side2, side3));
+			System.out.println("Median 2: " + Median(side2, side1, side3));
+			System.out.println("Median 3: " + Median(side3, side2, side1));
 		}
 		else {
 			System.out.println("Area: " + (width*height)/2);
@@ -46,5 +49,12 @@ public class Triangle {
 		double area = Math.sqrt(sp*(sp-sides[0])*(sp-sides[1])*(sp-sides[2]));
 		
 		return (float) area;
+	}
+	
+	//Get the median point of the triangle
+	private float Median(float middle, float a, float b) {
+		double median = Math.sqrt((2*a*a)+(2*b*b)-(middle*middle));
+		
+		return (float) median/2;
 	}
 }
