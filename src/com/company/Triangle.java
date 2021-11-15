@@ -24,6 +24,7 @@ public class Triangle {
 			System.out.println("Median 1: " + Median(side1, side2, side3));
 			System.out.println("Median 2: " + Median(side2, side1, side3));
 			System.out.println("Median 3: " + Median(side3, side2, side1));
+			System.out.println("Circle in triangle radius: " + CircleInTriangle(side1, side2, side3));
 		}
 		else {
 			System.out.println("Area: " + (width*height)/2);
@@ -62,4 +63,11 @@ public class Triangle {
 		return Circumference(s1, s2, s3) / 2;
 	}
 	
+	private float CircleInTriangle(float a, float b, float c) {
+		float sp = Semiperimeter(a, b, c);
+		
+		double circleRadius = Math.sqrt(((sp-a)*(sp-b)*(sp-c))/sp);
+		
+		return (float) circleRadius;
+	}
 }
