@@ -63,10 +63,10 @@ public class Triangle {
 		return Circumference(s1, s2, s3) / 2;
 	}
 	
-	private float CircleInTriangle(float a, float b, float c) {
-		float sp = Semiperimeter(a, b, c);
+	private float CircleInTriangle(float s1, float s2, float s3) {
+		float sp = Semiperimeter(s1, s2, s3);
 		
-		double circleRadius = Math.sqrt(((sp-a)*(sp-b)*(sp-c))/sp);
+		double circleRadius = Math.sqrt(((sp-s1)*(sp-s2)*(sp-s3))/sp);
 		
 		return (float) circleRadius;
 	}
