@@ -1,7 +1,7 @@
 package com.company;
 
 public class Triangle {
-	private float width, height, side1, side2, side3;
+	private float width, height, side1, side2, side3, angle;
 	private float[] sides;
 	
 	//Constructor for width and height
