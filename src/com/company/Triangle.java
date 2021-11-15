@@ -13,7 +13,13 @@ public class Triangle {
 	}
 	
 	public void Calculate() {
+		if (width == 0.0f || height == 0.0f) {
+			System.out.println("Omkrets: " + CircumferenceWithSides());
+		}
+	}
 	
+	private float CircumferenceWithSides() {
+		return sides[0]+sides[1]+sides[2];
 	}
 	
 	//Check if empty
