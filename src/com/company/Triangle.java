@@ -15,6 +15,13 @@ public class Triangle {
 		sides = triangleSides;
 	}
 	
+	//Constructor for two sides and the angle between them
+	public Triangle(float inputSide1, float inputSide2, float inputAngle) {
+		side1 = inputSide1;
+		side2 = inputSide2;
+		angle = inputAngle;
+	}
+	
 	//Main method to calculate the different things for the triangles
 	public void Calculate() {
 		if (width == 0.0f || height == 0.0f) {
