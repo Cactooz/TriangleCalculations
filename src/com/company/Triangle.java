@@ -14,7 +14,7 @@ public class Triangle {
 	
 	public void Calculate() {
 		if (width == 0.0f || height == 0.0f) {
-			System.out.println("Omkrets: " + CircumferenceWithSides());
+			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
 			System.out.println("Area: " + AreaWithSides());
 		}
 	}
@@ -25,8 +25,8 @@ public class Triangle {
 		side3 = sides[2];
 	}
 	
-	private float CircumferenceWithSides() {
-		return sides[0]+sides[1]+sides[2];
+	private float Circumference(float s1, float s2, float s3) {
+		return s1 + s2 + s3;
 	}
 	
 	private float AreaWithSides() {
