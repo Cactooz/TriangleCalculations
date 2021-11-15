@@ -13,6 +13,7 @@ public class Main {
 		System.out.println("Välj ett val:");
 		System.out.println("1. Höjd och bredd");
 		System.out.println("2. Tre sidors längd");
+		System.out.println("2. Två sidors längd och vinkeln emellan dem");
 		
 		//Get the input
 		byte answer = input.nextByte();
@@ -46,6 +47,21 @@ public class Main {
 			
 			//Run the calculations for a triangle with 3 sides
 			triangle.Calculate();
+		}
+		else if (answer == 3) {
+			//Get the first side of the triangle
+			System.out.print("Sida 1: ");
+			float side1 = input.nextFloat();
+			
+			//Get the second side of the triangle
+			System.out.print("Sida 2: ");
+			float side2 = input.nextFloat();
+			
+			//Get the angle between the two sides
+			System.out.print("Vinkeln emellan sidorna: ");
+			float angle = input.nextFloat();
+			
+			triangle = new Triangle(side1, side2, angle);
 		}
 		
 	}
