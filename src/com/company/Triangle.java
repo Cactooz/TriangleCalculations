@@ -4,14 +4,18 @@ public class Triangle {
 	private float width, height, side1, side2, side3;
 	private float[] sides;
 	
+	//Constructor for width and height
 	public Triangle(float triangleWidth, float triangleHeight) {
 		width = triangleWidth;
 		height = triangleHeight;
 	}
+	
+	//Constructor for 3 sides
 	public Triangle(float[] triangleSides) {
 		sides = triangleSides;
 	}
 	
+	//Main method to calculate the different things for the triangles
 	public void Calculate() {
 		if (width == 0.0f || height == 0.0f) {
 			splitArray();
@@ -23,16 +27,19 @@ public class Triangle {
 		}
 	}
 	
+	//Split the array with the 3 sides into variables that can be used in the other methodes
 	private void splitArray() {
 		side1 = sides[0];
 		side2 = sides[1];
 		side3 = sides[2];
 	}
 	
+	//Get the circumference of the triangle
 	private float Circumference(float s1, float s2, float s3) {
 		return s1 + s2 + s3;
 	}
 	
+	//Get the area of a triangle that we only know the 3 sides of
 	private float AreaWithSides() {
 		float sp = (sides[0]+sides[1]+sides[2])/2;
 		
@@ -40,7 +47,4 @@ public class Triangle {
 		
 		return (float) area;
 	}
-	
-	//Check if empty
-	//width.isEmpty();
 }
