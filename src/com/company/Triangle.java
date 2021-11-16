@@ -32,17 +32,17 @@ public class Triangle {
 		}
 		else if (width == 0.0f || height == 0.0f) {
 			splitArray();
+			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
+			System.out.println("Area: " + AreaWithSides(side1, side2, side3));
+			System.out.println("Median 1: " + Median(side1, side2, side3));
+			System.out.println("Median 2: " + Median(side2, side1, side3));
+			System.out.println("Median 3: " + Median(side3, side2, side1));
+			System.out.println("Circle in triangle radius: " + CircleInTriangle(side1, side2, side3));
 		}
 		else {
 			System.out.println("Area: " + (width*height)/2);
 			System.exit(0);
 		}
-		System.out.println("Omkrets: " + Circumference(side1, side2, side3));
-		System.out.println("Area: " + AreaWithSides(side1, side2, side3));
-		System.out.println("Median 1: " + Median(side1, side2, side3));
-		System.out.println("Median 2: " + Median(side2, side1, side3));
-		System.out.println("Median 3: " + Median(side3, side2, side1));
-		System.out.println("Circle in triangle radius: " + CircleInTriangle(side1, side2, side3));
 	}
 	
 	//Split the array with the 3 sides into variables that can be used in the other methods
