@@ -35,6 +35,7 @@ public class Triangle {
 		}
 		else {
 			System.out.println("Area: " + (width*height)/2);
+			System.exit(0);
 		}
 		System.out.println("Omkrets: " + Circumference(side1, side2, side3));
 		System.out.println("Area: " + AreaWithSides(side1, side2, side3));
