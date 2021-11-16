@@ -62,6 +62,8 @@ public class Main {
 			float angle = input.nextFloat();
 			
 			triangle = new Triangle(side1, side2, angle);
+			
+			triangle.Calculate();
 		}
 		
 	}
