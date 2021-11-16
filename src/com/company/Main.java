@@ -13,7 +13,7 @@ public class Main {
 		System.out.println("Välj ett val:");
 		System.out.println("1. Höjd och bredd");
 		System.out.println("2. Tre sidors längd");
-		System.out.println("2. Två sidors längd och vinkeln emellan dem");
+		System.out.println("3. Två sidors längd och vinkeln emellan dem");
 		
 		//Get the input
 		byte answer = input.nextByte();
