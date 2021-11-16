@@ -28,6 +28,7 @@ public class Triangle {
 			if (angle == 90) {
 				side3 = getThirdSide(side1, side2);
 			}
+			System.out.println("Bisektris: " + Bisector(side1, side2, angle));
 		}
 		else if (width == 0.0f || height == 0.0f) {
 			splitArray();
@@ -88,5 +89,11 @@ public class Triangle {
 		double s3 = Math.sqrt((s1*s1)+(s2*s2));
 		
 		return (float) s3;
+	}
+	
+	private float Bisector(float s1, float s2, float alpha) {
+		double p = 2 * s1 * s2 * Math.cos (alpha / 2);
+		double bisector = p / (s1 + s2);
+		return (float) bisector;
 	}
 }
