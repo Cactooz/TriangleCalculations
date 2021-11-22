@@ -7,7 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		
 		System.out.println("Välj ett val:");
 		System.out.println("1. Höjd och bredd");
 		System.out.println("2. Tre sidors längd");
@@ -24,9 +23,6 @@ public class Main {
 			//Get the width of the triangle
 			System.out.print("Triangelns bredd: ");
 			float width = input.nextFloat();
-			
-			//Run the calculations for the height and width
-			triangle.Calculate();
 		}
 		else if (answer == 2) {
 			float[] sides = new float[3];
@@ -37,9 +33,6 @@ public class Main {
 				System.out.print("Sida " + (i+1) + ": ");
 				sides[i] = input.nextFloat();
 			}
-			
-			//Run the calculations for a triangle with 3 sides
-			triangle.Calculate();
 		}
 		else if (answer == 3) {
 			//Get the first side of the triangle
@@ -53,8 +46,6 @@ public class Main {
 			//Get the angle between the two sides
 			System.out.print("Vinkeln emellan sidorna: ");
 			float angle = input.nextFloat();
-			
-			triangle.Calculate();
 		}
 		
 	}
