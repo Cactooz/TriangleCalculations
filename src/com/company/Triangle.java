@@ -1,9 +1,6 @@
 package com.company;
 
 public class Triangle {
-	private float width, height, side1, side2, side3, angle;
-	private float[] sides;
-	
 	//Get the circumference of the triangle
 	public static float Circumference(float s1, float s2, float s3) {
 		return s1 + s2 + s3;
