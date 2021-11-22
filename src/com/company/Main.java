@@ -23,6 +23,9 @@ public class Main {
 			//Get the width of the triangle
 			System.out.print("Triangelns bredd: ");
 			float width = input.nextFloat();
+			
+			//Get the area of the triangle
+			System.out.println("Area: " + Triangle.Area(height, width));
 		}
 		else if (answer == 2) {
 			float[] sides = new float[3];
