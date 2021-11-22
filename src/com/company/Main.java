@@ -37,6 +37,7 @@ public class Main {
 				sides[i] = input.nextFloat();
 			}
 			
+			//Print all calculations
 			System.out.println("Omkrets: " + Triangle.Circumference(sides[0], sides[1], sides[2]));
 			System.out.println("Area: " + Triangle.AreaWithSides(sides[0], sides[1], sides[2]));
 			System.out.println("Median 1: " + Triangle.Median(sides[0], sides[1], sides[2]));
@@ -57,9 +58,11 @@ public class Main {
 			System.out.print("Vinkeln emellan sidorna: ");
 			float angle = input.nextFloat();
 			
+			//Calculate more if the angle is 90 degrees
 			if (angle == 90) {
 				float side3 = Triangle.getThirdSide(side1, side2);
 				
+				//Print all calculations
 				System.out.println("Omkrets: " + Triangle.Circumference(side1, side2, side3));
 				System.out.println("Area: " + Triangle.AreaWithSides(side1, side2, side3));
 				System.out.println("Median 1: " + Triangle.Median(side1, side2, side3));
