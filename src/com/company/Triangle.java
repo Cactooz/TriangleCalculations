@@ -41,7 +41,6 @@ public class Triangle {
 		}
 		else {
 			System.out.println("Area: " + (width*height)/2);
-			System.exit(0);
 		}
 	}
 	
