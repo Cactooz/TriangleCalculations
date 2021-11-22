@@ -4,28 +4,6 @@ public class Triangle {
 	private float width, height, side1, side2, side3, angle;
 	private float[] sides;
 	
-	//Main method to calculate the different things for the triangles
-	public void Calculate() {
-		if (angle != 0.0f) {
-			if (angle == 90) {
-				side3 = getThirdSide(side1, side2);
-			}
-			System.out.println("Bisektris: " + Bisector(side1, side2, angle));
-		}
-		else if (width == 0.0f || height == 0.0f) {
-			splitArray();
-			System.out.println("Omkrets: " + Circumference(side1, side2, side3));
-			System.out.println("Area: " + AreaWithSides(side1, side2, side3));
-			System.out.println("Median 1: " + Median(side1, side2, side3));
-			System.out.println("Median 2: " + Median(side2, side1, side3));
-			System.out.println("Median 3: " + Median(side3, side2, side1));
-			System.out.println("Circle in triangle radius: " + CircleInTriangle(side1, side2, side3));
-		}
-		else {
-			System.out.println("Area: " + (width*height)/2);
-		}
-	}
-	
 	//Get the circumference of the triangle
 	public static float Circumference(float s1, float s2, float s3) {
 		return s1 + s2 + s3;
