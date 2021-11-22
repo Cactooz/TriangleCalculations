@@ -47,6 +47,11 @@ public class Triangle {
 		return (float) area;
 	}
 	
+	//Get the area with height and width
+	public static float Area(float h, float w) {
+		return (h*w)/2;
+	}
+	
 	//Get the median point of the triangle
 	public static float Median(float middle, float a, float b) {
 		double median = Math.sqrt((2*a*a)+(2*b*b)-(middle*middle));
