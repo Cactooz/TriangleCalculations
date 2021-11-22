@@ -36,6 +36,13 @@ public class Main {
 				System.out.print("Sida " + (i+1) + ": ");
 				sides[i] = input.nextFloat();
 			}
+			
+			System.out.println("Omkrets: " + Triangle.Circumference(sides[0], sides[1], sides[2]));
+			System.out.println("Area: " + Triangle.AreaWithSides(sides[0], sides[1], sides[2]));
+			System.out.println("Median 1: " + Triangle.Median(sides[0], sides[1], sides[2]));
+			System.out.println("Median 2: " + Triangle.Median(sides[0], sides[1], sides[2]));
+			System.out.println("Median 3: " + Triangle.Median(sides[0], sides[1], sides[2]));
+			System.out.println("Circle in triangle radius: " + Triangle.CircleInTriangle(sides[0], sides[1], sides[2]));
 		}
 		else if (answer == 3) {
 			//Get the first side of the triangle
