@@ -26,13 +26,6 @@ public class Triangle {
 		}
 	}
 	
-	//Split the array with the 3 sides into variables that can be used in the other methods
-	public static void splitArray() {
-		side1 = sides[0];
-		side2 = sides[1];
-		side3 = sides[2];
-	}
-	
 	//Get the circumference of the triangle
 	public static float Circumference(float s1, float s2, float s3) {
 		return s1 + s2 + s3;
