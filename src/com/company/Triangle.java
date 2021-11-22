@@ -41,6 +41,16 @@ public class Triangle {
 		return (float) circleRadius;
 	}
 	
+	//Get the radius of the circle that is inside the triangle
+	public static float CircleOutsideTriangle(float s1, float s2, float s3) {
+		float sp = Semiperimeter(s1, s2, s3);
+		
+		double denominator = Math.sqrt(((sp-s1)*(sp-s2)*(sp-s3))/sp);
+		double circleRadius = (s1*s2*s3)/(4*denominator);
+		
+		return (float) circleRadius;
+	}
+	
 	//Get the third side of the triangle using pythagoras formula
 	public static float getThirdSide(float s1, float s2) {
 		double s3 = Math.sqrt((s1*s1)+(s2*s2));
