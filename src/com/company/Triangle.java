@@ -45,7 +45,7 @@ public class Triangle {
 	public static float CircleOutsideTriangle(float s1, float s2, float s3) {
 		float sp = Semiperimeter(s1, s2, s3);
 		
-		double denominator = Math.sqrt(((sp-s1)*(sp-s2)*(sp-s3))/sp);
+		double denominator = Math.sqrt(((sp-s1)*(sp-s2)*(sp-s3))*sp);
 		double circleRadius = (s1*s2*s3)/(4*denominator);
 		
 		return (float) circleRadius;
