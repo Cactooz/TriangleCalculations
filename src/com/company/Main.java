@@ -56,6 +56,18 @@ public class Main {
 			//Get the angle between the two sides
 			System.out.print("Vinkeln emellan sidorna: ");
 			float angle = input.nextFloat();
+			
+			if (angle == 90) {
+				float side3 = Triangle.getThirdSide(side1, side2);
+				
+				System.out.println("Omkrets: " + Triangle.Circumference(side1, side2, side3));
+				System.out.println("Area: " + Triangle.AreaWithSides(side1, side2, side3));
+				System.out.println("Median 1: " + Triangle.Median(side1, side2, side3));
+				System.out.println("Median 2: " + Triangle.Median(side2, side1, side3));
+				System.out.println("Median 3: " + Triangle.Median(side3, side2, side1));
+				System.out.println("Circle in triangle radius: " + Triangle.CircleInTriangle(side1, side2, side3));
+			}
+			System.out.println("Bisektris: " + Triangle.Bisector(side1, side2, angle));
 		}
 		
 	}
