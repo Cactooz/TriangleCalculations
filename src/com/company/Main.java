@@ -44,6 +44,7 @@ public class Main {
 			System.out.println("Median 2: " + Triangle.Median(sides[0], sides[1], sides[2]));
 			System.out.println("Median 3: " + Triangle.Median(sides[0], sides[1], sides[2]));
 			System.out.println("Circle in triangle radius: " + Triangle.CircleInTriangle(sides[0], sides[1], sides[2]));
+			System.out.println("Omskriven Cirkel radie: " + Triangle.CircleOutsideTriangle(sides[0], sides[1], sides[2]));
 		}
 		else if (answer == 3) {
 			//Get the first side of the triangle
@@ -69,6 +70,7 @@ public class Main {
 				System.out.println("Median 2: " + Triangle.Median(side2, side1, side3));
 				System.out.println("Median 3: " + Triangle.Median(side3, side2, side1));
 				System.out.println("Circle in triangle radius: " + Triangle.CircleInTriangle(side1, side2, side3));
+				System.out.println("Omskriven Cirkel radie: " + Triangle.CircleOutsideTriangle(side1, side2, side3));
 			}
 			System.out.println("Bisektris: " + Triangle.Bisector(side1, side2, angle));
 		}
