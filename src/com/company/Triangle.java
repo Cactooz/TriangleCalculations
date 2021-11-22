@@ -4,24 +4,6 @@ public class Triangle {
 	private float width, height, side1, side2, side3, angle;
 	private float[] sides;
 	
-	//Constructor for width and height
-	public Triangle(float triangleWidth, float triangleHeight) {
-		width = triangleWidth;
-		height = triangleHeight;
-	}
-	
-	//Constructor for 3 sides
-	public Triangle(float[] triangleSides) {
-		sides = triangleSides;
-	}
-	
-	//Constructor for two sides and the angle between them
-	public Triangle(float inputSide1, float inputSide2, float inputAngle) {
-		side1 = inputSide1;
-		side2 = inputSide2;
-		angle = inputAngle;
-	}
-	
 	//Main method to calculate the different things for the triangles
 	public void Calculate() {
 		if (angle != 0.0f) {
