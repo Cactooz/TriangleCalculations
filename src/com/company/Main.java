@@ -7,8 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		//Class object of the triangle
-		Triangle triangle;
 		
 		System.out.println("Välj ett val:");
 		System.out.println("1. Höjd och bredd");
@@ -27,9 +25,6 @@ public class Main {
 			System.out.print("Triangelns bredd: ");
 			float width = input.nextFloat();
 			
-			//Create the triangle object
-			triangle = new Triangle(width, height);
-			
 			//Run the calculations for the height and width
 			triangle.Calculate();
 		}
@@ -42,8 +37,6 @@ public class Main {
 				System.out.print("Sida " + (i+1) + ": ");
 				sides[i] = input.nextFloat();
 			}
-			//Create the triangle object
-			triangle = new Triangle(sides);
 			
 			//Run the calculations for a triangle with 3 sides
 			triangle.Calculate();
@@ -60,8 +53,6 @@ public class Main {
 			//Get the angle between the two sides
 			System.out.print("Vinkeln emellan sidorna: ");
 			float angle = input.nextFloat();
-			
-			triangle = new Triangle(side1, side2, angle);
 			
 			triangle.Calculate();
 		}
