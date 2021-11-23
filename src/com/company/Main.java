@@ -25,7 +25,7 @@ public class Main {
 			float width = input.nextFloat();
 			
 			//Get the area of the triangle
-			System.out.println("Area: " + Triangle.Area(height, width));
+			System.out.println("Area: " + Triangle.area(height, width));
 		}
 		else if (answer == 2) {
 			float[] sides = new float[3];
@@ -38,13 +38,13 @@ public class Main {
 			}
 			
 			//Print all calculations
-			System.out.println("Omkrets: " + Triangle.Circumference(sides[0], sides[1], sides[2]));
-			System.out.println("Area: " + Triangle.AreaWithSides(sides[0], sides[1], sides[2]));
-			System.out.println("Median 1: " + Triangle.Median(sides[0], sides[1], sides[2]));
-			System.out.println("Median 2: " + Triangle.Median(sides[0], sides[1], sides[2]));
-			System.out.println("Median 3: " + Triangle.Median(sides[0], sides[1], sides[2]));
-			System.out.println("Inskriven Cirkel radie: " + Triangle.CircleInTriangle(sides[0], sides[1], sides[2]));
-			System.out.println("Omskriven Cirkel radie: " + Triangle.CircleOutsideTriangle(sides[0], sides[1], sides[2]));
+			System.out.println("Omkrets: " + Triangle.circumference(sides[0], sides[1], sides[2]));
+			System.out.println("Area: " + Triangle.area(sides[0], sides[1], sides[2]));
+			System.out.println("Median 1: " + Triangle.median(sides[0], sides[1], sides[2]));
+			System.out.println("Median 2: " + Triangle.median(sides[0], sides[1], sides[2]));
+			System.out.println("Median 3: " + Triangle.median(sides[0], sides[1], sides[2]));
+			System.out.println("Inskriven Cirkel radie: " + Triangle.circleInTriangle(sides[0], sides[1], sides[2]));
+			System.out.println("Omskriven Cirkel radie: " + Triangle.circleOutsideTriangle(sides[0], sides[1], sides[2]));
 		}
 		else if (answer == 3) {
 			//Get the first side of the triangle
@@ -64,15 +64,15 @@ public class Main {
 				float side3 = Triangle.getThirdSide(side1, side2);
 				
 				//Print all calculations
-				System.out.println("Omkrets: " + Triangle.Circumference(side1, side2, side3));
-				System.out.println("Area: " + Triangle.AreaWithSides(side1, side2, side3));
-				System.out.println("Median 1: " + Triangle.Median(side1, side2, side3));
-				System.out.println("Median 2: " + Triangle.Median(side2, side1, side3));
-				System.out.println("Median 3: " + Triangle.Median(side3, side2, side1));
-				System.out.println("Inskriven Cirkel radie: " + Triangle.CircleInTriangle(side1, side2, side3));
-				System.out.println("Omskriven Cirkel radie: " + Triangle.CircleOutsideTriangle(side1, side2, side3));
+				System.out.println("Omkrets: " + Triangle.circumference(side1, side2, side3));
+				System.out.println("Area: " + Triangle.area(side1, side2, side3));
+				System.out.println("Median 1: " + Triangle.median(side1, side2, side3));
+				System.out.println("Median 2: " + Triangle.median(side2, side1, side3));
+				System.out.println("Median 3: " + Triangle.median(side3, side2, side1));
+				System.out.println("Inskriven Cirkel radie: " + Triangle.circleInTriangle(side1, side2, side3));
+				System.out.println("Omskriven Cirkel radie: " + Triangle.circleOutsideTriangle(side1, side2, side3));
 			}
-			System.out.println("Bisektris: " + Triangle.Bisector(side1, side2, angle));
+			System.out.println("Bisektris: " + Triangle.bisector(side1, side2, angle));
 		}
 		
 	}
