@@ -59,8 +59,8 @@ public class Triangle {
 	}
 	
 	//Get the bisector of the triangle corner
-	public static float bisector(float s1, float s2, float alpha) {
-		double p = 2 * s1 * s2 * Math.cos (alpha / 2);
+	public static float bisector(float s1, float s2, float angle) {
+		double p = 2 * s1 * s2 * Math.cos (angle / 2);
 		double bisector = p / (s1 + s2);
 		return (float) bisector;
 	}
